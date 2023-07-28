@@ -36,7 +36,7 @@ export default function TransactionsList({
     const token = Cookies.get("token");
     if (!window.confirm("Are you sure")) return;
     const res = await fetch(
-      `http://localhost:4000/transaction/${_id}`,
+      `https://expensor-backend-ten.vercel.app/transaction/${_id}`,
       {
         method: "DELETE",
         headers: {

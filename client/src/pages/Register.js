@@ -23,7 +23,7 @@ export default function Register() {
       password: data.get("password"),
     };
 
-    const res = await fetch(`http://localhost:4000/auth/register`, {
+    const res = await fetch(`https://expensor-backend-ten.vercel.app/auth/register`, {
       method: "POST",
       body: JSON.stringify(form),
       headers: {

@@ -49,7 +49,7 @@ export default function CategoryForm({ editCategory }) {
   }
 
   async function create() {
-    const res = await fetch(`http://localhost:4000/category`, {
+    const res = await fetch(`https://expensor-backend-ten.vercel.app/category`, {
       method: "POST",
       body: JSON.stringify(form),
       headers: {
@@ -66,7 +66,7 @@ export default function CategoryForm({ editCategory }) {
 
   async function update() {
     const res = await fetch(
-      `http://localhost:4000/category/${editCategory._id}`,
+      `https://expensor-backend-ten.vercel.app/category/${editCategory._id}`,
       {
         method: "PATCH",
         body: JSON.stringify(form),

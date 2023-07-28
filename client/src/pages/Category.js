@@ -27,7 +27,7 @@ export default function Category() {
   }
 
   async function remove(id) {
-    const res = await fetch(`http://localhost:4000/category/${id}`, {
+    const res = await fetch(`https://expensor-backend-ten.vercel.app/category/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
